@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+body{
+    font-family: monospace;
+    
+}
+p{
+    font-size: 20px;
+}
+.logo{
+    
+    font-family:Oswald;
+    font-size: 3.5vw;
+    font-weight: bolder;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: 5vw;
+    margin-top: 3vh;
+    height: 10vh;
+}
+.links ul{
+    list-style: none;
+    display: flex;
+    gap: 1.2rem;
+    
+}
+
+.nav a{
+    color: black;
+    font-size: 1.5vw;
+    text-decoration: none;  
+}
+.nav a:hover{
+    color: gray;
+    text-shadow: 0px 0px 1px gray;
+}
+
+.ham{
+    font-family:Oswald;
+    font-size: 30px;
+    display: none;
+}
+.menu{
+    position: relative;
+    display: inline-block;
+    
+}
+.hi{
+    display: flex;
+    padding: 2px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+.hi span{
+    
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    transition:all 0.3 ease-in-out;
+}
+.links2{
+    position: absolute;
+    overflow: hidden;
+    top:100%;
+    right: 0;
+    width: auto;
+    max-height: 0;
+    transition: all 0.3 ease-in-out;
+
+}
+.links2 li{
+    list-style: none;
+}
+.links2 a{
+    color: black;
+    text-decoration: none;
+}
+.links2.open{
+    font-size: 1.25rem;
+    max-height: 300px;
+    border-radius: 30px;
+    background-color:hsl(195, 60%, 96%);
+    
+}
+.links2.open ul{
+    justify-content: center;
+}
+.links2.open li{
+    padding-inline: 3px;
+    margin-right: 20px;
+}
+.links2.open li:hover{
+    
+    border-radius: 10px;
+    background-color:hsl(195, 60%, 90%);
+}
+.hi.open span:first-child{
+    transform: rotate(45deg) translate(5px,4px);
+}
+.hi.open span:nth-child(2){
+    opacity: 0;
+}
+.hi.open span:last-child{
+    transform: rotate(-45deg) translate(5px,-5px);
+}
+
+.hi.open :first-child{
+    transform: none; 
+}
+.hi.open :nth-child(2){
+    opacity: 1;
+}
+.hi.open :last-child{
+    transform: none; 
+}
+.container{
+    justify-items: center;
+    margin: 10vw;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+}
+.photo, .details{ 
+    margin-inline-start: 5vw;
+    margin-inline-end: 5vw;
+}
+.photo{
+    margin-bottom: 50px;
+    height: 300px;
+    border-radius: 50px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.resume{
+    margin: 20px;
+}
+.resume button{
+    background-color: transparent;
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+    padding-inline: 15px;
+    cursor: pointer;
+    margin: 10px;
+    border: 1px solid black;
+}
+.resume a{
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+}
+.container2{
+    margin: 10vw;
+}
+.container2 h{
+    font-family: Oswald;
+    font-size: 40px;
+}
+.container2 a{
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+.container2 span{
+    color: gray;
+}
+.aboutboxes{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 15px;
+    justify-content: space-around;
+    
+}
+button:hover{
+    filter: drop-shadow(1px 1px 5px  gray);
+}
+.icons{
+    height: 40px;
+}
+.left, .right{
+    margin: 15px;
+    padding:15px;
+    border: 1px solid black ;
+    border-radius: 10px;
+}
+.container3, .container4 {
+    margin: 10vw;
+}
+.container3 .left,.container3 .right{
+    text-align: center;
+
+}
+.container3 h, .container4 h, .container5 h{
+    font-family: Oswald;
+    font-size: 40px;
+}
+
+.skillset{
+    display: grid;
+    grid-template-rows: 50%, 50%;
+    grid-template-columns: 50% 50%;  
+    margin-left: auto;
+    text-align: center;
+    
+}
+
+.fe{
+    height: 60px;
+    margin-inline: 5px;
+    padding:5px;
+    border:1px solid black;
+    border-radius: 5px;
+
+}
+.contactProfiles, .otherprofiles{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    
+}
+.contactProfiles a, .otherprofiles a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.contactProfiles a:hover, .otherprofiles a:hover{
+    filter: drop-shadow(1px 1px 5px  gray);
+}
+.container5{
+    margin: 3vw;
+    padding: 2vw;
+}
+.ms{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow:auto;
+    scroll-behavior:smooth;
+    padding: 5px;
+} 
+::-webkit-scrollbar {
+    visibility: hidden;
+    
+  }
+.ms::-webkit-scrollbar {
+    height: 10px;
+    
+  }
+ .ms::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+    margin-inline:5px ;
+  }
+   
+  .ms::-webkit-scrollbar-thumb {
+    background: hsl(195, 60%, 80%); 
+    border-radius: 10px;
+  }
+  
+  .ms::-webkit-scrollbar-thumb:hover {
+    background:hsl(195, 60%, 60%); 
+  }
+.cs{
+    min-width:fit-content;
+    height: 300px;
+    cursor: pointer;
+    margin-inline: 1vw;
+    padding: 5px;
+    overflow: hidden;
+}
+.ms img{
+    width: fit-content;
+    border-radius: 20px;
+    height: 300px;
+    
+}
+.x {
+    margin: 2vw;
+}
+.overlay-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+.overlay-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.overlay-text {
+    span{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 40px;
+    }
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+
+#project1 .overlay-container:hover img {
+    filter: blur(1px);
+}
+
+#project1 .overlay-container:hover .overlay-text {
+    opacity: 1;
+}
+
+@media screen and (max-width:1200px){
+
+    .nav{
+        display: none;
+    }
+    .ham{
+        display: flex;
+    }
+
+    .container{
+        display: inline;
+    }
+    .photo{
+        height: 250px;
+    }
+    .aboutboxes{
+        display: inline;
+    }
+    .container2, .container3, .container4 {
+        margin: 1vw;
+    }
+    .contactProfiles, .otherprofiles{
+        display: grid;
+        grid-template-columns: auto auto;
+        margin-block: 5vh;
+    }
+
+}
