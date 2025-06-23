@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="m.css">
+    
+</head>
+<body>
+    <nav class="nav">
+        <div class="logo">
+            HKG
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                
+            </ul>
+        </div>
+    </nav>
+    <nav class="ham">
+        <div class="hlogo">
+            HKG
+        </div>
+        <div class="menu">
+            <div class="hi" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            
+
+            </div>
+            <div class="links2">
+                <ul>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div>
+            <img class="photo" src="images/hkg.jpg">
+        </div>
+        <div class="details"> 
+            <h1>
+            Hello I'm<br>
+            Hemanth Kumar
+            </h1>
+            <p>
+            I'm a Software Engineer with a strong full-stack background. 
+            I enjoy solving problems and working with my team to create quality projects.
+            </p>
+        <div>
+            <div class="resume">
+                <p style="font-family: Arial, Helvetica, sans-serif;"><button  >
+                    <a href="Resume.pdf" target="_blank">Resume</a>
+                </button> 
+                <button>
+                    <a href="https://www.linkedin.com/in/hkg2704" >LinkedIn</a>
+                </button></p>
+            </div>
+
+        </div>
+        </div>
+    </div>
+    
+    <div>
+        <div class="container2">
+            <div class="details" id="About">
+                <h>About Me</h>
+                <div class="aboutboxes">
+                    <div class="left">
+                        <img class="icons" src="images/exp.png">
+                        <h1>Experience</h1>
+                            <h2>Full Stack Java Developer Intern</h2> 
+                            <p> Worked as a Full Stack Java Developer Intern at 
+                            <a href="https://brainovision.org/"><strong>Brainovision</strong></a>
+                            </p>
+                            <p>
+                                As a Full Stack Java Developer Intern at Brainovision, 
+                                I developed and maintained web applications using Java, Spring Boot, 
+                                and Hibernate on the back-end, and HTML, CSS, and JavaScript on the front-end.
+                            </p>
+                    </div>
+                    <div class="right"> 
+                        <img class="icons" src="images/edu.png">
+                        <h1>Education</h1>
+                        <h2>Undergraduate</h2>
+                        <p>Geethanjali College of Engineering and Technology <br>
+                            <span>Grad:2022-Present CGPA:8.0</span></p>
+                        <h2>12<sup>th</sup></h2>
+                        <p>Narayana Jr College <br><span>Grad:2019-2022 CGPA:9.6</span></p>
+                    </div>
+                </div>
+                    
+                
+            </div>
+        </div>
+    </div>
+    <div class="container3">
+        <div class="details" id="Skills" style="text-align: left;">
+            <h>Skills</h>
+            <div class="aboutboxes">
+                <div class="left">
+                    <img class="icons" src="images/front-end.png">
+                    <h1>Frontend Development</h1>
+                     <div class="skillset">
+                        <div><img src="images/html.png" alt="" class="fe"><h2>HTML</h2></div>
+                        <div><img src="images/css.png" alt="" class="fe"><h2>CSS</h2></div>
+                        <div><img src="images/js.png" alt="" class="fe"><h2>JavaScript</h2></div>
+                        <div><img src="images/react.png" alt="" class="fe"><h2>React Js</h2></div>
+                     </div> 
+                </div>
+                <div class="right"> 
+                    <img class="icons" src="images/backend.png">
+                    <h1>BackEnd Development</h1>
+                    <div class="skillset" >
+                        <div><img src="images/java.png" alt="" class="fe"><h2>Java</h2></div>
+                        <div><img src="images/spring-boot.png" alt="" class="fe"><h2>SpringBoot</h2></div>
+                        <div><img src="images/hibernate.png" alt="" class="fe"><h2>Hibernate</h2></div>
+                        <div><img src="images/mysql.png" alt="" class="fe"><h2>mysql DB</h2></div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="container5">
+            <h>Projects</h><br>
+            <br>
+            <di class="ms">
+                <div class="cs" id="project1">
+                    <a href="https://github.com/hkg2704/PwdScannerX" target="_blank">
+                        <div class="overlay-container">
+                            <img src="images/projects/PwdScanner.png" alt="PwdScannerX">
+                            <div class="overlay-text"><span>PwdScannerX</span><br><br>PwdScannerX is a lightweight and privacy-focused Chrome browser extension that checks the if Your Password has been exposed in a known data breach</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="cs" id="project1">
+                    <a href="https://github.com/hkg2704/SRMS" target="_blank">
+                        <div class="overlay-container">
+                            <img src="images/projects/SRMS.png" alt="SRMS">
+                            <div class="overlay-text"><span>SRMS</span><br><br>The Student Record Management System is a command-line application developed in C for managing student records efficiently.</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="cs" id="project1">
+                    <a href="https://github.com/hkg2704/Tic_Tac_Toe-in-C" target="_blank">
+                        <div class="overlay-container">
+                            <img src="images/projects/tictactoe.png" alt="Tic Tac Toe">
+                            <div class="overlay-text"><span>Tic Tac Toe</span><br><br>Tic-Tac-Toe is a 3x3 grid-based game for 2 players Written in C Language</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+    <div id="Contact">
+    <div class="container4">
+        <h>Contact profiles</h>
+            <div class="left">
+                 <div class="contactProfiles">
+                    <div><a target="_blank"  href="https://www.linkedin.com/in/hkg2704/"><img src="images/linkedin.png" alt="" class="fe"><h2>limkedIn</h2></a></div>
+                    <div><a  target="_blank" href="https://x.com/hkg2704"><img src="images/twitter.png" alt="" class="fe"><h2>Twitter/X</h2></a></div>
+                    <div><a  target="_blank" href="https://www.instagram.com/hkg2704/"><img src="images/instagram.png" alt="" class="fe"><h2>Instagram</h2></a></div>
+                    <div><a  target="_blank" href="https://wa.me/+919701114834"><img src="images/whatsapp.png" alt="" class="fe"><h2>Whatsapp</h2></a></div>
+                 </div> 
+            </div>
+            <h>Other Profiles</h>
+            <div class="right"> 
+                <div class="otherprofiles" >
+                    <div><a  target="_blank" href="https://github.com/hkg2704"><img src="images/github.png" alt="" class="fe"><h2>GitHub</h2></a></div>
+                    <div><a  target="_blank" href="https://leetcode.com/u/hkg2704/"><img src="images/leetcode.png" alt="" class="fe"><h2>Leetcode</h2></a></div>
+                    <div><a  target="_blank" href="https://www.hackerrank.com/profile/hkg2704"><img src="images/hackerrank.png" alt="" class="fe"><h2>Hackerrank</h2></a></div>
+                    <div><a  target="_blank" href="https://stackoverflow.com/users/26540569/no1hkg"><img src="images/stackoverflow.png" alt="" class="fe"><h2>Stack Overflow</h2></a></div>
+                    
+                </div>
+                
+            </div>
+
+    </div>
+</div>
+    <script src="index.js">
+    
+</script>
+
+</body>
+</html>
